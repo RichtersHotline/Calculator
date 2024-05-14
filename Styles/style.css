@@ -18,6 +18,7 @@ box-sizing:border-box;
     margin:auto;
     padding-top:20px;
     border-radius:25px;
+    box-shadow:2px 2px black;
 }
 .CalculatorBG {
     background-color:darkgray;
@@ -33,6 +34,19 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
 padding-left:10px;
 justify-content:space-between;
 font-size:7px;
+
+}
+#CalcNum {
+    height:90px;
+    width:350px;
+    background: rgb(61,105,78);
+    background: linear-gradient(90deg, rgba(61,105,78,1) 0%, rgba(82,135,105,1) 35%, rgba(112,169,136,1) 100%);
+    border:none;
+
+}
+input {
+
+font-size:32px;
 
 }
 .screen {
@@ -59,11 +73,11 @@ background: linear-gradient(90deg, rgba(61,105,78,1) 0%, rgba(82,135,105,1) 35%,
 }
 .CalcButton:hover {
 
-    background-color:red;
+    background-color:rgb(255, 0, 0);
     cursor:pointer;
 }
 .CalcButtonEqu:hover {
-    background-color:yellow;
+    background-color:rgb(5, 83, 240);
     cursor:pointer;
 }
 .CalcButton {
@@ -74,6 +88,13 @@ color:white;
 font-size:30px;
 border:none;
 margin:auto;
+
+transition:all 1s;
+&:hover {
+
+    box-shadow:2px 2px black;
+}
+
 }
 .CalcButtonEqu {
     width:70px;
@@ -84,6 +105,13 @@ font-size:30px;
 border:none;
 margin:auto;
 flex-basis:100%;
+box-shadow:1px 1px black;
+transition:all 1s;
+&:hover {
+
+    box-shadow:2px 2px black;
+}
+
 
 }
 break {

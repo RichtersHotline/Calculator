@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <main>
@@ -14,15 +15,17 @@
         <div class="CalculatorBG">
             <div class="CalculatorText">
             <h1>Basio Calculator</h1>
-            <h1>Fx-98</h1>
         </div>
-<div class="screen"></div>
+<div class="screen">
+<input type="number" id="CalcNum"></input>
+
+</div>
 <div class="ButtonTop">
 <div class="ActButtons">
-    <button type="button" class="CalcButton">7</button>
-    <button type="button" class="CalcButton">8</button>
-    <button type="button" class="CalcButton">9</button>
-    <button type="button" class="CalcButtonEqu">+</button>
+    <button type="button" id="CalcButton7" class="CalcButton">7</button>
+    <button type="button" id="CalcButton8" class="CalcButton">8</button>
+    <button type="button" id="CalcButton9" class="CalcButton">9</button>
+    <button type="button" id="CalcButtonPl"class="CalcButtonEqu">+</button>
     
 </div>
 
@@ -31,10 +34,10 @@
 </div>
 <div class="ButtonTop">
     <div class="ActButtons">
-        <button type="button" class="CalcButton">4</button>
-        <button type="button" class="CalcButton">5</button>
-        <button type="button" class="CalcButton">6</button>
-        <button type="button" class="CalcButtonEqu">-</button>
+        <button type="button" id="CalcButton4" class="CalcButton">4</button>
+        <button type="button" id="CalcButton5" class="CalcButton">5</button>
+        <button type="button" id="CalcButton6" class="CalcButton">6</button>
+        <button type="button" id="CalcButtonMin" class="CalcButtonEqu">-</button>
       
     </div>
     
@@ -43,10 +46,10 @@
     </div>
     <div class="ButtonTop">
         <div class="ActButtons">
-            <button type="button" class="CalcButton">1</button>
-            <button type="button" class="CalcButton">2</button>
-            <button type="button" class="CalcButton">3</button>
-            <button type="button" class="CalcButtonEqu">X</button>
+            <button type="button" id="CalcButton1" onclick="BTN1()" class="CalcButton">1</button>
+            <button type="button" id="CalcButton2" class="CalcButton">2</button>
+            <button type="button" id="CalcButton3" class="CalcButton">3</button>
+            <button type="button" id="CalcButtonMl" class="CalcButtonEqu">X</button>
           
         </div>
         
@@ -55,10 +58,10 @@
         </div>
         <div class="ButtonTop">
             <div class="ActButtons">
-                <button type="button" class="CalcButton">0</button>
-                <button type="button" class="CalcButton">DEL</button>
-                <button type="button" class="CalcButton">=</button>
-                <button type="button" class="CalcButtonEqu">/</button>
+                <button type="button" id="CalcButton0" class="CalcButton">0</button>
+                <button type="button" id="CalcButtonDEL" class="CalcButton">DEL</button>
+                <button type="button" id="CalcButtonEQ" class="CalcButton">=</button>
+                <button type="button" id="CalcButtonDivide" class="CalcButtonEqu">/</button>
               
             </div>
             
@@ -78,5 +81,6 @@
     </div>
     </main>
     
-</body>
+    <script src="./Scripts/code.js"></script>
+    </body>
 </html>
