@@ -64,7 +64,7 @@ DecimalBtn.disabled = true;
 
 }
 
-function DEL() {
+function ClearSum() {
 
 location.reload();
 
@@ -72,7 +72,7 @@ location.reload();
 
 
 
-function Equals() {
+function EvaluteSum() {
 
     let Question = dataEntry.value
 let Answer = eval(Question);
