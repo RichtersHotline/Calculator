@@ -17,15 +17,15 @@
             <h1>Basio Calculator</h1>
         </div>
 <div class="screen">
-<input type="number" id="CalcNum"></input>
+<input type="text" class="textinput" readonly placeholder="0" id="CalcNum"></input>
 
 </div>
 <div class="ButtonTop">
 <div class="ActButtons">
-    <button type="button" id="CalcButton7" class="CalcButton">7</button>
-    <button type="button" id="CalcButton8" class="CalcButton">8</button>
-    <button type="button" id="CalcButton9" class="CalcButton">9</button>
-    <button type="button" id="CalcButtonPl"class="CalcButtonEqu">+</button>
+    <button type="button" id="CalcButton7" onclick="display('7')" class="CalcButton">7</button>
+    <button type="button" id="CalcButton8" onclick="display('8')" class="CalcButton">8</button>
+    <button type="button" id="CalcButton9" onclick="display('9')" class="CalcButton">9</button>
+    <button type="button" id="CalcButtonPl" onclick="display('+')" class="CalcButtonEqu">+</button>
     
 </div>
 
@@ -34,10 +34,10 @@
 </div>
 <div class="ButtonTop">
     <div class="ActButtons">
-        <button type="button" id="CalcButton4" class="CalcButton">4</button>
-        <button type="button" id="CalcButton5" class="CalcButton">5</button>
-        <button type="button" id="CalcButton6" class="CalcButton">6</button>
-        <button type="button" id="CalcButtonMin" class="CalcButtonEqu">-</button>
+        <button type="button" id="CalcButton4" onclick="display('4')" class="CalcButton">4</button>
+        <button type="button" id="CalcButton5" onclick="display('5')" class="CalcButton">5</button>
+        <button type="button" id="CalcButton6" onclick="display('6')" class="CalcButton">6</button>
+        <button type="button" id="CalcButtonMin" onclick="display('-')"  class="CalcButtonEqu">-</button>
       
     </div>
     
@@ -46,10 +46,10 @@
     </div>
     <div class="ButtonTop">
         <div class="ActButtons">
-            <button type="button" id="CalcButton1" onclick="BTN1()" class="CalcButton">1</button>
-            <button type="button" id="CalcButton2" class="CalcButton">2</button>
-            <button type="button" id="CalcButton3" class="CalcButton">3</button>
-            <button type="button" id="CalcButtonMl" class="CalcButtonEqu">X</button>
+            <button type="button" id="CalcButton1" onclick="display('1')" class="CalcButton">1</button>
+            <button type="button" id="CalcButton2"  onclick="display('2')" class="CalcButton">2</button>
+            <button type="button" id="CalcButton3"  onclick="display('3')"class="CalcButton">3</button>
+            <button type="button" id="CalcButtonMl" onclick="display('x')"  class="CalcButtonEqu">X</button>
           
         </div>
         
@@ -58,10 +58,10 @@
         </div>
         <div class="ButtonTop">
             <div class="ActButtons">
-                <button type="button" id="CalcButton0" class="CalcButton">0</button>
-                <button type="button" id="CalcButtonDEL" class="CalcButton">DEL</button>
+                <button type="button" id="CalcButton0" onclick="display('0')" class="CalcButton">0</button>
+                <button type="button" id="CalcButtonDEL" onclick="DEL()" class="CalcButton">CE</button>
                 <button type="button" id="CalcButtonEQ" class="CalcButton">=</button>
-                <button type="button" id="CalcButtonDivide" class="CalcButtonEqu">/</button>
+                <button type="button" id="CalcButtonDivide" onclick="display('÷')" class="CalcButtonEqu">/</button>
               
             </div>
             
